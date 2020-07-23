@@ -30,5 +30,20 @@ public class AccountServiceImpl implements AccountService {
         accountRepository.save(account);
         return mapper.map(account,AccountEntityOnResponse.class);
 	}
+    
+    @Override
+    @Transactional
+	public Account findByAccountId(int id)
+	{
+    	
+		return accountRepository.findByAccountId(id);
+	}
+    
+    @Override
+    @Transactional
+	public Account findByUserName(String name)
+	{
+		return accountRepository.findByUserName(name);
+	}
 
 }
