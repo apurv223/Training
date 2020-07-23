@@ -1,8 +1,4 @@
 package com.example.demo.service;
-
-
-import java.util.Optional;
-
 import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,13 +23,6 @@ public class ImageServiceImpl implements ImageService{
 	public Iterable<Image> getAllImage() {
 		// TODO Auto-generated method stub
 		return imageDao.findAll();
-	}
-	
-	@Override
-	@Transactional
-	public Optional<Image> createImage(Image image) {
-		imageDao.save(image);
-		return Optional.of(image);
 	}
 
 }
