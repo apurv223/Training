@@ -21,5 +21,7 @@ public class Image {
 	private UUID id;
 	@Column(name = "image_url")
 	private String imageUrl;
+	
+
 
 }

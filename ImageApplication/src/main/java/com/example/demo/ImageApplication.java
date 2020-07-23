@@ -22,7 +22,7 @@ public class ImageApplication implements CommandLineRunner{
 	@Override
 	public void run(String... args) throws Exception {
 		
-		imageDao.save(new Image(UUID.randomUUID(), "demourl-1") );
+		imageDao.save(new Image(UUID.fromString("39a084a2-ccaf-11ea-87d0-0242ac130003"), "demourl-1") );
 		imageDao.save(new Image(UUID.randomUUID(),"demourl-2"));
 	}
 
