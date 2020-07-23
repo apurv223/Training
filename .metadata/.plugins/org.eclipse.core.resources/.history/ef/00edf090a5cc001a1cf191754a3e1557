@@ -1,0 +1,6 @@
+import com.example.demo.model.Image;
+
+public interface ImageService {
+	public Iterable<Image> getAllImage();
+
+}
